@@ -4,12 +4,12 @@ Import-Module ActiveDirectory
 
 #change the path where you want to save your csv file. Don't forget the .csv at the end of the path.
 
-$Path = '\ad.cuda-inc.com\dfs\IT\Windows System Admin\Powershell\Audit\Output\GetGroupMembers-EnabledorDisabled.csv'
+$Path = '.\Output\GetGroupMembers-EnabledorDisabled.csv' #enter output path here for csv file
 
 
 #Script
 
-$gc = "ad.cuda-inc.com:3268"
+$gc = "ad.cuda-inc.com:3268" #enter AD domain and port
 
 $domains = (Get-ADForest).Domains
 
